@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>test</title>
+</head>
+
+<body>
+    <script type="text/javascript" lang="javascript">
+        function init(title, url) {
+            document.write('<option value=' + url + '>' + title + '</option>');
+        }
+
+        document.write('<form name="frm">');
+        document.write('<select name="combo1" size="1"' + 'onchange="for(var i=0;i<this.options.length;i++) ' +
+            'if(this.options[i].selected) ' +
+            'window.location.href=this.options[i].value">');
+        init('company information', 'company.html');
+        init('service information', 'service.html');
+        init('Staff', 'staff.html');
+
+        document.write('</select>');
+        document.write('</form>');
+    </script>
+</body>
+
+</html>
