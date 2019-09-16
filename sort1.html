@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>sort1</title>
+    <meta content="text/html; charset=UTF-8;" http-equiv="content-Type">
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <script type="text/javascript" lang="javascript">
+        var mas = [3,2,1,5,4];
+        document.writeln("mas = "+mas + "<BR>");
+        document.writeln(mas.sort()+"<BR>");
+        var c;
+        for (var i=0;i<mas.length-1;i++)
+            for(var j=0;j<mas.length-1;j++)
+                if(mas[j]>mas[j+1])
+                    {
+                        c=mas[j];
+                        mas[j]=mas[j+1];
+                        mas[j+1]=c;
+                    }
+        document.writeln("mas = "+mas); 
+    </script>
+</body>
+
+</html>
